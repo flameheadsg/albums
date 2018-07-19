@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { View, Text } from 'react-native';
 
 import Header from './Header';
+import AlbumList from './AlbumList';
 
 class App extends Component {
   render() {
     return (
-      <Header headerText="Albums" />
+      <View style={{ flex: 1 }}>
+        <Header headerText="Albums" />
+        <AlbumList />
+      </View>
     );
   }
 }
